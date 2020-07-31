@@ -5,10 +5,8 @@ import { rootCertificates } from 'tls';
 var fs = require('fs');
 
 // 読み込みする スプレッドシートID と シート名 の記載
-// const SSID = process.env.SheetID;
-// const SSName1 = process.env.SheetName_1;
-const SSID = process.env.BANSEN_SheetID;
-const SSName1 = process.env.BANSEN_SheetName;
+const SSID = process.env.SheetID;
+const SSName1 = process.env.SheetName_1;
 // 画像などを保存するフォルダのパスを記載する。
 const DownloadFolder = __dirname + '/Download/';
 // Abematvのログイン。 メールアドレス・パスワードの記載 <<漏洩注意>>
