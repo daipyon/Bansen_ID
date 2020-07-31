@@ -650,13 +650,13 @@ async function CreativeCreate(IDLIST, Datas, Row) {
   }
   // 属性が何個あるのか判定して個数によって処理を変える
   let ZokuseiFlag = 0;
-  if (Datas[0][7] != '') {
+  if (Datas[0][7] != '' || Datas[0][7] != undefined) {
     ZokuseiFlag = 1;
   }
-  if (Datas[0][8] != '') {
+  if (Datas[0][8] != '' || Datas[0][8] != undefined) {
     ZokuseiFlag = 2;
   }
-  if (Datas[0][9] != '') {
+  if (Datas[0][9] != '' || Datas[0][9] != undefined) {
     ZokuseiFlag = 3;
   }
   RPA.Logger.info(`属性の数: ${ZokuseiFlag}`);
